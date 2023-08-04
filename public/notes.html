@@ -1,0 +1,41 @@
+<!-- public/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <a href="/">Note Taker</a>
+        <div>
+            <i id="save-icon" class="far fa-save" style="display: none"></i>
+            <i id="write-icon" class="fas fa-pen"></i>
+        </div>
+    </header>
+    <main>
+        <div class="left-column">
+            <h2>Existing Notes</h2>
+            <ul id="notes-list">
+                <!-- Existing notes will be dynamically added here -->
+            </ul>
+        </div>
+        <div class="right-column">
+            <h2>Note Details</h2>
+            <form id="note-form">
+                <input type="text" id="note-title" placeholder="Note Title" />
+                <textarea id="note-text" placeholder="Note Text"></textarea>
+                <button type="submit" id="save-button">Save</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/bc24839119.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
